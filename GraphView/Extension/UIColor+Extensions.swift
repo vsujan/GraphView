@@ -18,11 +18,11 @@ public extension UIColor {
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
     
-    func lighter(amount amount: CGFloat) -> UIColor {
+    func lighter(amount: CGFloat) -> UIColor {
         return hueColorWithBrightnessAmount(1 - amount)
     }
     
-    private func hueColorWithBrightnessAmount(amount: CGFloat) -> UIColor {
+    fileprivate func hueColorWithBrightnessAmount(_ amount: CGFloat) -> UIColor {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
@@ -38,7 +38,7 @@ public extension UIColor {
         }
     }
     
-    static func gradientColor(green: Double, red: Double) -> UIColor {
+    static func gradientColor(_ green: Double, red: Double) -> UIColor {
         return UIColor(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: 0.0, alpha: 1.0)
     }
     

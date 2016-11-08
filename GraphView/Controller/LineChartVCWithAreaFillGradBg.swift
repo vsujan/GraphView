@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class LineChartVCWithAreaFillGradBg: UIViewController {
     @IBOutlet weak var gradientView: UIView!
@@ -21,11 +21,11 @@ class LineChartVCWithAreaFillGradBg: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let gradientLayer = getGradientLayer()
-        gradientView.layer.insertSublayer(gradientLayer, atIndex: 0)
+        gradientView.layer.insertSublayer(gradientLayer, at: 0)
         
     }
     
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {

@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class RadarChartVC: UIViewController {
 
     @IBOutlet var chartView: RadarChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.title = String(RadarChartVC)
+        self.navigationController?.title = String(describing: RadarChartVC)
         drawLineChart(DataValues.months, values: DataValues.unitSold)
     }
     
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {

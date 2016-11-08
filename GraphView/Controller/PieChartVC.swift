@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class PieChartVC: UIViewController {
     @IBOutlet var chartView: PieChartView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.title = String(PieChartVC)
+        self.navigationController?.title = String(describing: PieChartVC)
         addPieChart(DataValues.months, values: DataValues.unitSold)
     }
     
-    func addPieChart(dataPoints: [String], values: [Double]) {
+    func addPieChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {

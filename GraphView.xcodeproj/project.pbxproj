@@ -34,18 +34,18 @@
 		994069EB1DC1E28B004D8916 /* CellWithLineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069E71DC1E28B004D8916 /* CellWithLineGraph.swift */; };
 		994069EC1DC1E28B004D8916 /* CellWithLineGraph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994069E81DC1E28B004D8916 /* CellWithLineGraph.xib */; };
 		99DF20341DD04526008F2897 /* MultipleLineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DF20331DD04526008F2897 /* MultipleLineGraph.swift */; };
-		99EEED171DCC42FD004DFBD0 /* Pods_GraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */; };
-		99EEED181DCC42FD004DFBD0 /* Pods_GraphView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99FCFE241DD1E0FE0013AB31 /* Pods_GraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9943514D1DD1E0A2009DD0D6 /* Pods_GraphView.framework */; };
+		99FCFE251DD1E0FE0013AB31 /* Pods_GraphView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9943514D1DD1E0A2009DD0D6 /* Pods_GraphView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		99EEED191DCC42FD004DFBD0 /* Embed Frameworks */ = {
+		99FCFE261DD1E0FE0013AB31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				99EEED181DCC42FD004DFBD0 /* Pods_GraphView.framework in Embed Frameworks */,
+				99FCFE251DD1E0FE0013AB31 /* Pods_GraphView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +83,7 @@
 		994069E61DC1E28B004D8916 /* CellWithGradientLineGraph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellWithGradientLineGraph.xib; path = View/CellWithGradientLineGraph.xib; sourceTree = "<group>"; };
 		994069E71DC1E28B004D8916 /* CellWithLineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellWithLineGraph.swift; path = View/CellWithLineGraph.swift; sourceTree = "<group>"; };
 		994069E81DC1E28B004D8916 /* CellWithLineGraph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellWithLineGraph.xib; path = View/CellWithLineGraph.xib; sourceTree = "<group>"; };
+		9943514D1DD1E0A2009DD0D6 /* Pods_GraphView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_GraphView.framework; path = "Pods/../build/Debug-iphoneos/Pods_GraphView.framework"; sourceTree = "<group>"; };
 		99DF20331DD04526008F2897 /* MultipleLineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleLineGraph.swift; sourceTree = "<group>"; };
 		AE528442EEF9A76D3B2AA8AF /* Pods-GraphView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphView/Pods-GraphView.debug.xcconfig"; sourceTree = "<group>"; };
 		CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99EEED171DCC42FD004DFBD0 /* Pods_GraphView.framework in Frameworks */,
+				99FCFE241DD1E0FE0013AB31 /* Pods_GraphView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +104,7 @@
 		5D24331F31ADE29E106ADC4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9943514D1DD1E0A2009DD0D6 /* Pods_GraphView.framework */,
 				CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */,
 			);
 			name = Frameworks;
@@ -240,7 +242,7 @@
 				994069801DC1B95E004D8916 /* Resources */,
 				4B981BC39F8A1215164F55B7 /* [CP] Embed Pods Frameworks */,
 				C69F4E9ABB82DC0325C5A4F4 /* [CP] Copy Pods Resources */,
-				99EEED191DCC42FD004DFBD0 /* Embed Frameworks */,
+				99FCFE261DD1E0FE0013AB31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +266,7 @@
 					994069811DC1B95E004D8916 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = N7DN9W93BF;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -493,6 +496,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GraphView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sujan-Vaidya.GraphView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -510,11 +518,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GraphView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sujan-Vaidya.GraphView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

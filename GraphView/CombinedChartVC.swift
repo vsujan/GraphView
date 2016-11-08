@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 // TODO
 class CombinedChartVC: UIViewController {
@@ -18,7 +18,7 @@ class CombinedChartVC: UIViewController {
         drawLineChart(DataValues.months)
     }
     
-    func drawLineChart(dataPoints: [String]) {
+    func drawLineChart(_ dataPoints: [String]) {
         chartView.noDataText = "You need to provide data for the chart."
         
         let values1: [Double] = [4, 3, 5, 6, 2, 7, 8, 10, 12, 12, 11, 15]

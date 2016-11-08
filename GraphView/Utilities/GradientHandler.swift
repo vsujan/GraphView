@@ -22,7 +22,7 @@ struct GradientHandler {
     static func addGradientLayer() -> CAGradientLayer {
         gradientLayer.frame = bounds
         gradientLayer.colors = colors
-        gradientLayer.locations = location
+        gradientLayer.locations = location as [NSNumber]?
         gradientLayer.startPoint = startPosition
         gradientLayer.endPoint = endPosition
         return gradientLayer

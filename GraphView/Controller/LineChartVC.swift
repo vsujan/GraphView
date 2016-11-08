@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class LineChartVC: UIViewController {
 
@@ -17,7 +17,7 @@ class LineChartVC: UIViewController {
         drawLineChart(DataValues.months, values: DataValues.unitSold)
     }
 
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {

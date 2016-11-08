@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class CellWithGradientLineGraph: UITableViewCell {
     @IBOutlet weak var gradientView: UIView!
@@ -17,7 +17,7 @@ class CellWithGradientLineGraph: UITableViewCell {
         super.awakeFromNib()
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
@@ -26,10 +26,10 @@ class CellWithGradientLineGraph: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         let gradientLayer = getGradientLayer()
-        gradientView.layer.insertSublayer(gradientLayer, atIndex: 0)
+        gradientView.layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {

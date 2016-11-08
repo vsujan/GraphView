@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 // TODO
 class GroupedPointsVC: UIViewController {
@@ -19,7 +19,7 @@ class GroupedPointsVC: UIViewController {
         drawLineChart(DataValues.months, values: DataValues.unitSold)
     }
     
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         
 //        let values = [1, 2, 3, 4, 3, 5, 5, 6, 4, 5, 6, 7, 8, 5, 3, 4, 5, 6, 5, 6, 4, 5, 6, 4, 6, 3, 4, 5, 4, 5, 4, 5, 6, 6, 4, 7]

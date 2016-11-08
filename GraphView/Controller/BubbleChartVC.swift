@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class BubbleChartVC: UIViewController {
     @IBOutlet var chartView: BubbleChartView!
@@ -17,7 +17,7 @@ class BubbleChartVC: UIViewController {
         drawLineChart(DataValues.months, values: DataValues.unitSold)
     }
     
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {

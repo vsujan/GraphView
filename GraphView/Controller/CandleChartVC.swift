@@ -7,19 +7,19 @@
 //
 
 import UIKit
-import Charts
+//import Charts
 
 class CandleChartVC: UIViewController {
     @IBOutlet var chartView: CandleStickChartView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.title = String(CandleChartVC)
+        self.navigationController?.title = String(describing: CandleChartVC)
         let dataPoints: [Double] = [4, 3, 5, 6, 6, 7, 5, 3, 2, 4, 6, 4]
         drawLineChart(DataValues.months, values: dataPoints)
     }
     
-    func drawLineChart(dataPoints: [String], values: [Double]) {
+    func drawLineChart(_ dataPoints: [String], values: [Double]) {
         chartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {
