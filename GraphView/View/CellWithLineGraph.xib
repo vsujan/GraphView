@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellWithLineGraph" rowHeight="200" id="5co-CH-pRJ" customClass="CellWithLineGraph" customModule="ChartTest4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5co-CH-pRJ" id="aX3-qS-6a0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-sZ-Pll" customClass="LineChartView" customModule="Charts">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="SyS-rF-o7w"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SyS-rF-o7w"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ceC-sZ-Pll" firstAttribute="leading" secondItem="aX3-qS-6a0" secondAttribute="leading" id="35Y-d6-hJv"/>
+                    <constraint firstAttribute="trailing" secondItem="ceC-sZ-Pll" secondAttribute="trailing" id="D3L-LB-Qbc"/>
+                    <constraint firstAttribute="bottom" secondItem="ceC-sZ-Pll" secondAttribute="bottom" id="gu0-Ab-OKh"/>
+                    <constraint firstItem="ceC-sZ-Pll" firstAttribute="top" secondItem="aX3-qS-6a0" secondAttribute="top" id="xWo-Rc-kGP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chartView" destination="ceC-sZ-Pll" id="4vI-qR-bZ6"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="301"/>
+        </tableViewCell>
+    </objects>
+</document>

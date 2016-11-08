@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellWithGradientLineGraph" id="LdK-K8-xAE" customClass="CellWithGradientLineGraph" customModule="ChartTest4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LdK-K8-xAE" id="T1y-xU-nN4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLm-wh-0C3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Y2-0v-g63" customClass="LineChartView" customModule="Charts">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Y2-0v-g63" firstAttribute="top" secondItem="T1y-xU-nN4" secondAttribute="top" id="49Z-mq-U9M"/>
+                    <constraint firstItem="YLm-wh-0C3" firstAttribute="top" secondItem="T1y-xU-nN4" secondAttribute="top" id="LCA-sM-kBj"/>
+                    <constraint firstAttribute="trailing" secondItem="YLm-wh-0C3" secondAttribute="trailing" id="OtH-VG-fKg"/>
+                    <constraint firstAttribute="bottom" secondItem="YLm-wh-0C3" secondAttribute="bottom" id="PkL-UE-9ym"/>
+                    <constraint firstItem="YLm-wh-0C3" firstAttribute="leading" secondItem="T1y-xU-nN4" secondAttribute="leading" id="Z1b-fW-rNL"/>
+                    <constraint firstAttribute="bottom" secondItem="9Y2-0v-g63" secondAttribute="bottom" id="cIv-vw-ugW"/>
+                    <constraint firstItem="9Y2-0v-g63" firstAttribute="leading" secondItem="T1y-xU-nN4" secondAttribute="leading" id="olp-oD-NdU"/>
+                    <constraint firstAttribute="trailing" secondItem="9Y2-0v-g63" secondAttribute="trailing" id="tgK-Up-tvT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chartView" destination="9Y2-0v-g63" id="766-he-k8R"/>
+                <outlet property="gradientView" destination="YLm-wh-0C3" id="dPM-ha-pnb"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="218"/>
+        </tableViewCell>
+    </objects>
+</document>

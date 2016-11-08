@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		990EAEEE1DCC4B12008F5D33 /* CombinedChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990EAEED1DCC4B12008F5D33 /* CombinedChartVC.swift */; };
+		991385B71DC312E100D3E964 /* BubbleChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991385B21DC312E100D3E964 /* BubbleChartVC.swift */; };
+		991385B81DC312E100D3E964 /* CandleChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991385B31DC312E100D3E964 /* CandleChartVC.swift */; };
+		991385B91DC312E100D3E964 /* PieChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991385B41DC312E100D3E964 /* PieChartVC.swift */; };
+		991385BA1DC312E100D3E964 /* RadarChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991385B51DC312E100D3E964 /* RadarChartVC.swift */; };
+		991385BB1DC312E100D3E964 /* ScatteredChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991385B61DC312E100D3E964 /* ScatteredChartVC.swift */; };
+		991385BD1DC312EB00D3E964 /* DataValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991385BC1DC312EB00D3E964 /* DataValues.swift */; };
+		992E87741DD1AD9500DB78FB /* GroupedPointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E87731DD1AD9500DB78FB /* GroupedPointsVC.swift */; };
+		9940698D1DC1B95E004D8916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9940698C1DC1B95E004D8916 /* Assets.xcassets */; };
+		994069B41DC1D810004D8916 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 994069B31DC1D810004D8916 /* Podfile */; };
+		994069C71DC1D9F7004D8916 /* ChartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069C01DC1D9F7004D8916 /* ChartTableViewController.swift */; };
+		994069C81DC1D9F7004D8916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994069C11DC1D9F7004D8916 /* LaunchScreen.storyboard */; };
+		994069C91DC1D9F7004D8916 /* LineChartVCWithAreaFillGradBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069C21DC1D9F7004D8916 /* LineChartVCWithAreaFillGradBg.swift */; };
+		994069CA1DC1D9F7004D8916 /* LineChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069C31DC1D9F7004D8916 /* LineChartVC.swift */; };
+		994069CB1DC1D9F7004D8916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994069C41DC1D9F7004D8916 /* Main.storyboard */; };
+		994069CC1DC1D9F7004D8916 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069C51DC1D9F7004D8916 /* MasterViewController.swift */; };
+		994069CD1DC1D9F7004D8916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069C61DC1D9F7004D8916 /* ViewController.swift */; };
+		994069CF1DC1DA04004D8916 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069CE1DC1DA04004D8916 /* ColorConstants.swift */; };
+		994069D11DC1DA0C004D8916 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069D01DC1DA0C004D8916 /* UIColor+Extensions.swift */; };
+		994069D41DC1DA1B004D8916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069D21DC1DA1B004D8916 /* AppDelegate.swift */; };
+		994069D81DC1DB17004D8916 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994069D71DC1DB17004D8916 /* Info.plist */; };
+		994069DA1DC1DC03004D8916 /* GradientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069D91DC1DC03004D8916 /* GradientHandler.swift */; };
+		994069E91DC1E28B004D8916 /* CellWithGradientLineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069E51DC1E28B004D8916 /* CellWithGradientLineGraph.swift */; };
+		994069EA1DC1E28B004D8916 /* CellWithGradientLineGraph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994069E61DC1E28B004D8916 /* CellWithGradientLineGraph.xib */; };
+		994069EB1DC1E28B004D8916 /* CellWithLineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994069E71DC1E28B004D8916 /* CellWithLineGraph.swift */; };
+		994069EC1DC1E28B004D8916 /* CellWithLineGraph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994069E81DC1E28B004D8916 /* CellWithLineGraph.xib */; };
+		99DF20341DD04526008F2897 /* MultipleLineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DF20331DD04526008F2897 /* MultipleLineGraph.swift */; };
+		99EEED171DCC42FD004DFBD0 /* Pods_GraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */; };
+		99EEED181DCC42FD004DFBD0 /* Pods_GraphView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99EEED191DCC42FD004DFBD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99EEED181DCC42FD004DFBD0 /* Pods_GraphView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85F4FD40B72BE2218628AE6E /* Pods-GraphView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphView.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphView/Pods-GraphView.release.xcconfig"; sourceTree = "<group>"; };
+		990EAEED1DCC4B12008F5D33 /* CombinedChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedChartVC.swift; sourceTree = "<group>"; };
+		991385B21DC312E100D3E964 /* BubbleChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleChartVC.swift; path = Controller/BubbleChartVC.swift; sourceTree = "<group>"; };
+		991385B31DC312E100D3E964 /* CandleChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandleChartVC.swift; path = Controller/CandleChartVC.swift; sourceTree = "<group>"; };
+		991385B41DC312E100D3E964 /* PieChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieChartVC.swift; path = Controller/PieChartVC.swift; sourceTree = "<group>"; };
+		991385B51DC312E100D3E964 /* RadarChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadarChartVC.swift; path = Controller/RadarChartVC.swift; sourceTree = "<group>"; };
+		991385B61DC312E100D3E964 /* ScatteredChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScatteredChartVC.swift; path = Controller/ScatteredChartVC.swift; sourceTree = "<group>"; };
+		991385BC1DC312EB00D3E964 /* DataValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataValues.swift; path = DataSource/DataValues.swift; sourceTree = "<group>"; };
+		992E87731DD1AD9500DB78FB /* GroupedPointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupedPointsVC.swift; sourceTree = "<group>"; };
+		994069821DC1B95E004D8916 /* GraphView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9940698A1DC1B95E004D8916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9940698C1DC1B95E004D8916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9940698F1DC1B95E004D8916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		994069B31DC1D810004D8916 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		994069C01DC1D9F7004D8916 /* ChartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartTableViewController.swift; path = Controller/ChartTableViewController.swift; sourceTree = "<group>"; };
+		994069C11DC1D9F7004D8916 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Controller/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		994069C21DC1D9F7004D8916 /* LineChartVCWithAreaFillGradBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineChartVCWithAreaFillGradBg.swift; path = Controller/LineChartVCWithAreaFillGradBg.swift; sourceTree = "<group>"; };
+		994069C31DC1D9F7004D8916 /* LineChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineChartVC.swift; path = Controller/LineChartVC.swift; sourceTree = "<group>"; };
+		994069C41DC1D9F7004D8916 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Controller/Main.storyboard; sourceTree = "<group>"; };
+		994069C51DC1D9F7004D8916 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Controller/MasterViewController.swift; sourceTree = "<group>"; };
+		994069C61DC1D9F7004D8916 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		994069CE1DC1DA04004D8916 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorConstants.swift; path = Constant/ColorConstants.swift; sourceTree = "<group>"; };
+		994069D01DC1DA0C004D8916 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "Extension/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		994069D21DC1DA1B004D8916 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Resources/AppDelegate.swift; sourceTree = "<group>"; };
+		994069D71DC1DB17004D8916 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994069D91DC1DC03004D8916 /* GradientHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientHandler.swift; path = Utilities/GradientHandler.swift; sourceTree = "<group>"; };
+		994069E51DC1E28B004D8916 /* CellWithGradientLineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellWithGradientLineGraph.swift; path = View/CellWithGradientLineGraph.swift; sourceTree = "<group>"; };
+		994069E61DC1E28B004D8916 /* CellWithGradientLineGraph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellWithGradientLineGraph.xib; path = View/CellWithGradientLineGraph.xib; sourceTree = "<group>"; };
+		994069E71DC1E28B004D8916 /* CellWithLineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellWithLineGraph.swift; path = View/CellWithLineGraph.swift; sourceTree = "<group>"; };
+		994069E81DC1E28B004D8916 /* CellWithLineGraph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellWithLineGraph.xib; path = View/CellWithLineGraph.xib; sourceTree = "<group>"; };
+		99DF20331DD04526008F2897 /* MultipleLineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleLineGraph.swift; sourceTree = "<group>"; };
+		AE528442EEF9A76D3B2AA8AF /* Pods-GraphView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphView/Pods-GraphView.debug.xcconfig"; sourceTree = "<group>"; };
+		CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9940697F1DC1B95E004D8916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EEED171DCC42FD004DFBD0 /* Pods_GraphView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D24331F31ADE29E106ADC4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC709670DFAC425351CBBE10 /* Pods_GraphView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		994069791DC1B95E004D8916 = {
+			isa = PBXGroup;
+			children = (
+				994069B31DC1D810004D8916 /* Podfile */,
+				994069841DC1B95E004D8916 /* GraphView */,
+				994069831DC1B95E004D8916 /* Products */,
+				D89FDB9DEBB2137C3ACBFB82 /* Pods */,
+				5D24331F31ADE29E106ADC4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		994069831DC1B95E004D8916 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994069821DC1B95E004D8916 /* GraphView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994069841DC1B95E004D8916 /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				994069D71DC1DB17004D8916 /* Info.plist */,
+				994069BF1DC1D9B5004D8916 /* Resources */,
+				994069BE1DC1D9AE004D8916 /* Utilities */,
+				994069BD1DC1D93D004D8916 /* View */,
+				994069BC1DC1D938004D8916 /* Controller */,
+				994069BB1DC1D92F004D8916 /* DataSource */,
+				994069B81DC1D8FD004D8916 /* Extension */,
+				994069B51DC1D8DC004D8916 /* Constants */,
+				994069891DC1B95E004D8916 /* Main.storyboard */,
+				9940698C1DC1B95E004D8916 /* Assets.xcassets */,
+				9940698E1DC1B95E004D8916 /* LaunchScreen.storyboard */,
+			);
+			path = GraphView;
+			sourceTree = "<group>";
+		};
+		994069B51DC1D8DC004D8916 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				994069CE1DC1DA04004D8916 /* ColorConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		994069B81DC1D8FD004D8916 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				994069D01DC1DA0C004D8916 /* UIColor+Extensions.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		994069BB1DC1D92F004D8916 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				991385BC1DC312EB00D3E964 /* DataValues.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		994069BC1DC1D938004D8916 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				991385B21DC312E100D3E964 /* BubbleChartVC.swift */,
+				991385B31DC312E100D3E964 /* CandleChartVC.swift */,
+				991385B41DC312E100D3E964 /* PieChartVC.swift */,
+				991385B51DC312E100D3E964 /* RadarChartVC.swift */,
+				991385B61DC312E100D3E964 /* ScatteredChartVC.swift */,
+				994069C01DC1D9F7004D8916 /* ChartTableViewController.swift */,
+				994069C11DC1D9F7004D8916 /* LaunchScreen.storyboard */,
+				994069C21DC1D9F7004D8916 /* LineChartVCWithAreaFillGradBg.swift */,
+				994069C31DC1D9F7004D8916 /* LineChartVC.swift */,
+				994069C41DC1D9F7004D8916 /* Main.storyboard */,
+				994069C51DC1D9F7004D8916 /* MasterViewController.swift */,
+				994069C61DC1D9F7004D8916 /* ViewController.swift */,
+				990EAEED1DCC4B12008F5D33 /* CombinedChartVC.swift */,
+				99DF20331DD04526008F2897 /* MultipleLineGraph.swift */,
+				992E87731DD1AD9500DB78FB /* GroupedPointsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		994069BD1DC1D93D004D8916 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				994069E51DC1E28B004D8916 /* CellWithGradientLineGraph.swift */,
+				994069E61DC1E28B004D8916 /* CellWithGradientLineGraph.xib */,
+				994069E71DC1E28B004D8916 /* CellWithLineGraph.swift */,
+				994069E81DC1E28B004D8916 /* CellWithLineGraph.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		994069BE1DC1D9AE004D8916 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				994069D91DC1DC03004D8916 /* GradientHandler.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		994069BF1DC1D9B5004D8916 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				994069D21DC1DA1B004D8916 /* AppDelegate.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D89FDB9DEBB2137C3ACBFB82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE528442EEF9A76D3B2AA8AF /* Pods-GraphView.debug.xcconfig */,
+				85F4FD40B72BE2218628AE6E /* Pods-GraphView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		994069811DC1B95E004D8916 /* GraphView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994069941DC1B95E004D8916 /* Build configuration list for PBXNativeTarget "GraphView" */;
+			buildPhases = (
+				AE3E768A7B8F7FE8FD6F7C7D /* [CP] Check Pods Manifest.lock */,
+				9940697E1DC1B95E004D8916 /* Sources */,
+				9940697F1DC1B95E004D8916 /* Frameworks */,
+				994069801DC1B95E004D8916 /* Resources */,
+				4B981BC39F8A1215164F55B7 /* [CP] Embed Pods Frameworks */,
+				C69F4E9ABB82DC0325C5A4F4 /* [CP] Copy Pods Resources */,
+				99EEED191DCC42FD004DFBD0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphView;
+			productName = GraphView;
+			productReference = 994069821DC1B95E004D8916 /* GraphView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9940697A1DC1B95E004D8916 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sujan Vaidya";
+				TargetAttributes = {
+					994069811DC1B95E004D8916 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = N7DN9W93BF;
+					};
+				};
+			};
+			buildConfigurationList = 9940697D1DC1B95E004D8916 /* Build configuration list for PBXProject "GraphView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 994069791DC1B95E004D8916;
+			productRefGroup = 994069831DC1B95E004D8916 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				994069811DC1B95E004D8916 /* GraphView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		994069801DC1B95E004D8916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9940698D1DC1B95E004D8916 /* Assets.xcassets in Resources */,
+				994069B41DC1D810004D8916 /* Podfile in Resources */,
+				994069EC1DC1E28B004D8916 /* CellWithLineGraph.xib in Resources */,
+				994069CB1DC1D9F7004D8916 /* Main.storyboard in Resources */,
+				994069D81DC1DB17004D8916 /* Info.plist in Resources */,
+				994069EA1DC1E28B004D8916 /* CellWithGradientLineGraph.xib in Resources */,
+				994069C81DC1D9F7004D8916 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B981BC39F8A1215164F55B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraphView/Pods-GraphView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3E768A7B8F7FE8FD6F7C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C69F4E9ABB82DC0325C5A4F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraphView/Pods-GraphView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9940697E1DC1B95E004D8916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991385B91DC312E100D3E964 /* PieChartVC.swift in Sources */,
+				991385B81DC312E100D3E964 /* CandleChartVC.swift in Sources */,
+				994069EB1DC1E28B004D8916 /* CellWithLineGraph.swift in Sources */,
+				994069D41DC1DA1B004D8916 /* AppDelegate.swift in Sources */,
+				994069CD1DC1D9F7004D8916 /* ViewController.swift in Sources */,
+				994069CC1DC1D9F7004D8916 /* MasterViewController.swift in Sources */,
+				991385BA1DC312E100D3E964 /* RadarChartVC.swift in Sources */,
+				994069E91DC1E28B004D8916 /* CellWithGradientLineGraph.swift in Sources */,
+				991385B71DC312E100D3E964 /* BubbleChartVC.swift in Sources */,
+				994069C91DC1D9F7004D8916 /* LineChartVCWithAreaFillGradBg.swift in Sources */,
+				994069CF1DC1DA04004D8916 /* ColorConstants.swift in Sources */,
+				991385BB1DC312E100D3E964 /* ScatteredChartVC.swift in Sources */,
+				992E87741DD1AD9500DB78FB /* GroupedPointsVC.swift in Sources */,
+				994069D11DC1DA0C004D8916 /* UIColor+Extensions.swift in Sources */,
+				991385BD1DC312EB00D3E964 /* DataValues.swift in Sources */,
+				994069CA1DC1D9F7004D8916 /* LineChartVC.swift in Sources */,
+				994069DA1DC1DC03004D8916 /* GradientHandler.swift in Sources */,
+				99DF20341DD04526008F2897 /* MultipleLineGraph.swift in Sources */,
+				990EAEEE1DCC4B12008F5D33 /* CombinedChartVC.swift in Sources */,
+				994069C71DC1D9F7004D8916 /* ChartTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		994069891DC1B95E004D8916 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9940698A1DC1B95E004D8916 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9940698E1DC1B95E004D8916 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9940698F1DC1B95E004D8916 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		994069921DC1B95E004D8916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		994069931DC1B95E004D8916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		994069951DC1B95E004D8916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE528442EEF9A76D3B2AA8AF /* Pods-GraphView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GraphView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sujan-Vaidya.GraphView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		994069961DC1B95E004D8916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F4FD40B72BE2218628AE6E /* Pods-GraphView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GraphView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sujan-Vaidya.GraphView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9940697D1DC1B95E004D8916 /* Build configuration list for PBXProject "GraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994069921DC1B95E004D8916 /* Debug */,
+				994069931DC1B95E004D8916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994069941DC1B95E004D8916 /* Build configuration list for PBXNativeTarget "GraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994069951DC1B95E004D8916 /* Debug */,
+				994069961DC1B95E004D8916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9940697A1DC1B95E004D8916 /* Project object */;
+}
